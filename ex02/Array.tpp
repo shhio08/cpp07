@@ -21,7 +21,8 @@ Array<T>::~Array() {
 
 template <typename T>
 Array<T>& Array<T>::operator=(const Array<T>& other) {
-	if (this != &other) {
+	if (this != &other)
+	{
 		delete[] this->_data;
 		this->_data = new T[other._size];
 		this->_size = other._size;
